@@ -1,4 +1,6 @@
 import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore/lite"
+
 const firebaseConfig = {
   apiKey: "AIzaSyC0WNvVIrXcqprzTC2WGWSn6Pi5ayXDF0U",
   authDomain: "vanlife-3fcae.firebaseapp.com",
@@ -8,6 +10,7 @@ const firebaseConfig = {
   appId: "1:765325323966:web:ad87f38bf5f242abe6b8ef"
 };
 const app = initializeApp(firebaseConfig);
+const db = getFirestore(app)
 
 
 
